@@ -1,0 +1,11 @@
+{
+  "name": "inline-style-loader",
+  "version": "1.0.0",
+  "description": "inline style loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "jbsouvestre@gmail.com",
+  "license": "MIT"
+}

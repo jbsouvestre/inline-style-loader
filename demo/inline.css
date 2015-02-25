@@ -1,0 +1,12 @@
+$var: #000;
+.a {
+    color: #eee;
+    background-color: lighten($var, 50%);
+    box-sizing: border-box;
+    display: flex;
+    border: {
+        style: solid;
+        width: 10px;
+        color: indianred;
+    }
+}
