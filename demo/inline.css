@@ -1,5 +1,5 @@
 $var: #000;
-.a {
+.select {
     color: #eee;
     background-color: lighten($var, 50%);
     box-sizing: border-box;
@@ -9,4 +9,13 @@ $var: #000;
         width: 10px;
         color: indianred;
     }
+}
+
+
+
+button {
+    border: 1px solid #ccc;
+    background-color: lightblue;
+    border-radius: 4px;
+    padding: 4px 8px;
 }
