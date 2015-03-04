@@ -4,15 +4,18 @@
   "description": "inline style loader for webpack",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha -R spec"
   },
-  "author": "jbsouvestre@gmail.com",
+  "author": "Jean-Baptiste Souvestre",
   "license": "MIT",
   "dependencies": {
     "css": "^2.2.0",
     "lodash": "^3.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "mocha": "^2.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jbsouvestre/inline-style-loader.git"
