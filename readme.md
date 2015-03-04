@@ -3,7 +3,7 @@ a webpack loader that imports a css file and converts it to be used as an inline
 
 ## Usage
 ```css
-.any {
+.selector {
     color: red;
     background-color: blue;
 }
@@ -12,6 +12,6 @@ a webpack loader that imports a css file and converts it to be used as an inline
 ```js
 element = document.createElement('div');
 element.setAttribute('style', 
-    require('raw!inline-style!./some-inline-style.css')
+    require('raw!inline-style!./some-inline-style.css')['.selector']
 );
 ```
