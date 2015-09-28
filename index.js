@@ -1,6 +1,5 @@
 /*jshint node: true, strict: false*/
 var css = require('css');
-var util = require('util');
 
 var RULE = 'rule';
 
@@ -18,13 +17,12 @@ module.exports = function(source) {
     var rules = {},
         inline;
 
-
     stylesheet.rules.forEach(function(rule) {
         inline = '';
 
         if (rule.type === RULE) {
             inline = rule.declarations.map(function(declaration) {
-                return util.format('%s: %s', declaration.property, declaration.value);
+                return declaration.property + ': ' + declaration.value;
             }).join('; ');
         }
 

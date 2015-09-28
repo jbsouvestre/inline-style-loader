@@ -1,5 +1,5 @@
 # inline-style-loader
-a webpack loader that imports a css file and converts it to be used as an inline style
+A webpack loader that imports a css file and converts it to be used as an inline style
 
 ## Usage
 ```css
