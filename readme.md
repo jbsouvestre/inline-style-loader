@@ -18,3 +18,8 @@ element.setAttribute('style',
     require('raw!inline-style!./some-inline-style.css')['.selector']
 );
 ```
+
+[Check the demo for a more complete example](https://github.com/jbsouvestre/inline-style-loader/tree/master/demo)
+
+## Limitations
+Because the css is inlined, pseudo classes (`:hover`, `:active`, ...) can't be supported.  
