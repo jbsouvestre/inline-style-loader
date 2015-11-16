@@ -19,6 +19,10 @@ element.setAttribute('style',
 );
 ```
 
+```html
+<div style="color: red; background-color: blue;"></div>
+```
+
 [Check the demo for a more complete example](https://github.com/jbsouvestre/inline-style-loader/tree/master/demo)
 
 ## Limitations
