@@ -26,9 +26,11 @@ module.exports = function(source) {
             }).join('; ');
         }
 
-        rule.selectors.forEach(function(selector) {
-            rules[selector] = inline;
-        });
+        if(rule.selectors) {
+            rule.selectors.forEach(function(selector) {
+                rules[selector] = inline;
+            });
+        }
     });
 
     return rules;
