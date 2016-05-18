@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Inline-style-loader by jbsouvestre</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Inline-style-loader</h1>
+        <p>inline style loader for webpack</p>
+
+        <p class="view"><a href="https://github.com/jbsouvestre/inline-style-loader">View the Project on GitHub <small>jbsouvestre/inline-style-loader</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jbsouvestre/inline-style-loader/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jbsouvestre/inline-style-loader/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jbsouvestre/inline-style-loader">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="inline-style-loader" class="anchor" href="#inline-style-loader" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>inline-style-loader</h1>
+
+<p>A webpack loader that imports a css file and converts it to be used as an inline style</p>
+
+<p><a href="https://travis-ci.org/jbsouvestre/inline-style-loader"><img src="https://travis-ci.org/jbsouvestre/inline-style-loader.svg" alt="Build Status"></a>
+<a href="https://david-dm.org/jbsouvestre/inline-style-loader"><img src="https://david-dm.org/jbsouvestre/inline-style-loader.svg" alt="Dependencies"></a></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.selector</span> {
+    <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">red</span>;
+    <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">blue</span>;
+}</pre></div>
+
+<div class="highlight highlight-source-js"><pre>element <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">'</span>div<span class="pl-pds">'</span></span>);
+<span class="pl-smi">element</span>.<span class="pl-c1">setAttribute</span>(<span class="pl-s"><span class="pl-pds">'</span>style<span class="pl-pds">'</span></span>, 
+    <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>raw!inline-style!./some-inline-style.css<span class="pl-pds">'</span></span>)[<span class="pl-s"><span class="pl-pds">'</span>.selector<span class="pl-pds">'</span></span>]
+);</pre></div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>color: red; background-color: blue;<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p><a href="https://github.com/jbsouvestre/inline-style-loader/tree/master/demo">Check the demo for a more complete example</a></p>
+
+<h2>
+<a id="limitations" class="anchor" href="#limitations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Limitations</h2>
+
+<p>Because the css is inlined, pseudo classes (<code>:hover</code>, <code>:active</code>, ...) can't be supported.  </p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jbsouvestre">jbsouvestre</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
